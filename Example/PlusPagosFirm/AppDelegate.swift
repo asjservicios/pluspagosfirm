@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import PlusPagosFirm
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,7 +16,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        let sha = SHA256Firm.getFirm(ipClient: "192.168.0.1", secretKey: "pluspagos", guidComercio: "testguid", sucursalId: "", monto: "100")
+        print(sha)
+        
+        if let aes = AESEncrypter.encryptString(plainText: "1234567890", phrase: "nada") {
+            print(aes)
+        }
+        
+        if let d = AESEncrypter.decryptString(encryptedText: "DdOGOsj9XZt7QM/p8yHJgWD/2N2WQW32JOu6QVpvVn8=", phrase: "nada") {
+            print(d)
+        }
+        
         return true
     }
 

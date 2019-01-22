@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'PlusPagosFirm'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of PlusPagosFirm.'
+  s.summary          = 'Encriptacion de PlusPagos'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -17,11 +17,9 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
-  s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
+  s.description      = 'Libreria para encriptar campos de boton de pago de PlusPagos'
 
-  s.homepage         = 'https://github.com/e699006c1788932c1bf62474df4b313e2588cef5/PlusPagosFirm'
+  s.homepage         = 'https://sandboxpp.asjservicios.com.ar'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'e699006c1788932c1bf62474df4b313e2588cef5' => 'andres.ceccoli@gmail.com' }
@@ -39,4 +37,8 @@ TODO: Add long description of the pod here.
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
+  
+  s.swift_version = '4.1'
+  
+  s.dependency 'CryptoSwift'
 end

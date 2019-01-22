@@ -30,8 +30,8 @@
 /* Begin PBXFileReference section */
 		02A070B71848851186C89F9A /* Pods-PlusPagosFirm_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlusPagosFirm_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PlusPagosFirm_Tests/Pods-PlusPagosFirm_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		2226783772D44F63A940BBF7 /* Pods_PlusPagosFirm_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PlusPagosFirm_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		313F79C45CE8539182D0144C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		3DDCA7D86C7DA6889457301A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		313F79C45CE8539182D0144C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		3DDCA7D86C7DA6889457301A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* PlusPagosFirm_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlusPagosFirm_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -46,7 +46,7 @@
 		7B880ACDC316B8F7583578DA /* Pods_PlusPagosFirm_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PlusPagosFirm_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F17EDC1214CD8D5622D6967 /* Pods-PlusPagosFirm_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlusPagosFirm_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PlusPagosFirm_Tests/Pods-PlusPagosFirm_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		B0645F1BA1033311798E3CDF /* Pods-PlusPagosFirm_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlusPagosFirm_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PlusPagosFirm_Example/Pods-PlusPagosFirm_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		BBFC1D68EE1D524222D2E5E2 /* PlusPagosFirm.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = PlusPagosFirm.podspec; path = ../PlusPagosFirm.podspec; sourceTree = "<group>"; };
+		BBFC1D68EE1D524222D2E5E2 /* PlusPagosFirm.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = PlusPagosFirm.podspec; path = ../PlusPagosFirm.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -268,10 +268,12 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-PlusPagosFirm_Example/Pods-PlusPagosFirm_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CryptoSwift/CryptoSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/PlusPagosFirm/PlusPagosFirm.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CryptoSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PlusPagosFirm.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
