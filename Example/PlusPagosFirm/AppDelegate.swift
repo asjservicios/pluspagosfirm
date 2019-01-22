@@ -17,15 +17,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
-        let sha = SHA256Firm.getFirm(ipClient: "192.168.0.1", secretKey: "pluspagos", guidComercio: "testguid", sucursalId: "", monto: "100")
-        print(sha)
+        let secretKey = "secret"
+        let comercio = "guidComercio"
+        let callbackSuccess = "https://www.google.com.ar"
+        let callbackCancel = "https://www.bing.com"
+        let ip = "192.168.0.1"
         
-        if let aes = AESEncrypter.encryptString(plainText: "1234567890", phrase: "nada") {
-            print(aes)
-        }
-        
-        if let d = AESEncrypter.decryptString(encryptedText: "DdOGOsj9XZt7QM/p8yHJgWD/2N2WQW32JOu6QVpvVn8=", phrase: "nada") {
-            print(d)
+        let model = FormularioModel(secretKey: secretKey)
+            .ip(ip)
+            .callbackCancel(callbackCancel)
+            .callbackSuccess(callbackSuccess)
+            .comercio(comercio)
+            .sucursalComercio("")
+            .transaccionComercioId("1234")
+            .monto(3)
+            .addProducto("test")
+        if let data = model.toUrlEncodedForm() {
+            print(String(data: data, encoding: .utf8) ?? "error")
         }
         
         return true

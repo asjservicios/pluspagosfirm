@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'PlusPagosFirm'
-  s.version          = '0.1.0'
+  s.version          = '0.2.0'
   s.summary          = 'Encriptacion de PlusPagos'
 
 # This description is used to generate tags and improve search results.
@@ -22,8 +22,8 @@ Pod::Spec.new do |s|
   s.homepage         = 'https://sandboxpp.asjservicios.com.ar'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'e699006c1788932c1bf62474df4b313e2588cef5' => 'andres.ceccoli@gmail.com' }
-  s.source           = { :git => 'https://github.com/e699006c1788932c1bf62474df4b313e2588cef5/PlusPagosFirm.git', :tag => s.version.to_s }
+  s.author           = { 'asjservicios' => 'asjservicios' }
+  s.source           = { :git => 'https://github.com/asjservicios/pluspagosfirm.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
