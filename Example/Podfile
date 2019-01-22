@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'PlusPagosFirm_Example' do
+  pod 'PlusPagosFirm', :path => '../'
+
+  target 'PlusPagosFirm_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
