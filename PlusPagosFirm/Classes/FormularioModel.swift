@@ -56,7 +56,9 @@ public class FormularioModel {
     public func monto(_ m: Double!) -> FormularioModel {
         var mt = m * 100.0
         mt.round()
-        monto = "\(mt)"
+        if let mint = Int(exactly: mt) {
+            monto = "\(mint)"
+        }
         return self
     }
     
