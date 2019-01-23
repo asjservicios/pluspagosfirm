@@ -1,0 +1,23 @@
+PODS:
+  - CryptoSwift (0.12.0)
+  - PlusPagosFirm (0.2.1):
+    - CryptoSwift
+
+DEPENDENCIES:
+  - PlusPagosFirm (from `../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - CryptoSwift
+
+EXTERNAL SOURCES:
+  PlusPagosFirm:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  CryptoSwift: 1c07ca50843dd48bc54e6ea53d7a4dba3b645716
+  PlusPagosFirm: db6ef50bdd31de164c7d078f1a3c95b007788a29
+
+PODFILE CHECKSUM: c316f932a2a6f91621dcff479be149b3ddd6b0d2
+
+COCOAPODS: 1.5.3
